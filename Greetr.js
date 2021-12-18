@@ -1,8 +1,10 @@
 (function(global, $){
 
+    // lets 'new' an object
     var Greetr = function(firstName, lastName, language) {
         return new Greetr.init(firstName, lastName, language);
     }
+
     var supportedLangs = ['en', 'es'];
 
     var greetings = {
@@ -90,6 +92,7 @@
         }
     }
 
+    // the constructor function for greeter
     Greetr.init = function(firstName, lastName, language) {
         this.firstName = firstName || '';
         this.lastName = lastName || ''; 
@@ -97,6 +100,7 @@
         this.validate();
     }
 
+    // make sure greeter gets all the required methods
     Greetr.init.prototype = Greetr.prototype;
     
     global.Greetr = global.G$ = Greetr;
