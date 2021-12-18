@@ -100,7 +100,7 @@
         this.validate();
     }
 
-    // make sure greeter gets all the required methods
+    // make sure greeter gets all the required functionality
     Greetr.init.prototype = Greetr.prototype;
     
     global.Greetr = global.G$ = Greetr;
